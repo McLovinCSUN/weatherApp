@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌈Kawaii Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Galada&family=Modak&family=Rowdies&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="date">
+            <h4>
+              <strong> <span class="time" id="datetime"> </span></strong>
+            </h4>
+            <small>
+              <button id="currentLocation" class="button">
+                Current Location
+              </button>
+            </small>
+          </div>
+          <div>
+            <img class="sun" src="images/sun.png" alt="sun" />
+          </div>
+          <span class="tempDisplay">
+            <span id="temp" class="tempDisplay">
+              83℉
+              <span>|<a id="tempC" href="">℃</a> </span>
+            </span>
+          </span>
+          <div class="largeDisp">
+            <p id="currentCity" class="largeDisplay">
+              Los Angeles
+            </p>
+          </div>
+        </div>
+
+        <div class="col" class="rightCol">
+          <form class="search-bar" id="search-bar">
+            <input
+              id="form"
+              type="search"
+              placeholder="Enter city...🐱‍💻"
+              aria-label="Search"
+              class="submitSearch"
+            />
+            <button class="searchbtn" type="submit" id="searchBtn">
+              Search
+            </button>
+          </form>
+          <div class="rigashtCol">
+            <img
+              class="art"
+              src="images/art.png"
+              alt="Artismist from salior moon"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="lastrow">
+        <div class="row">
+          <div class="col">
+            <div>
+              <p class="days">Tomorrow</p>
+              <div>
+                <img class="weather" src="images/sun.png" alt="sunny" />
+              </div>
+              <div class="temp">
+                <p>65℉ | 75℉</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p class="days">Wednesday</p>
+              <div>
+                <img class="weather" src="images/cloudy.png" alt="sunny" />
+              </div>
+              <div class="temp">
+                <p>65℉ | 75℉</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p class="days">Thursday</p>
+              <div>
+                <img class="weather" src="images/thunder.png" alt="sunny" />
+              </div>
+              <div class="temp">
+                <p>65℉ | 75℉</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p class="days">Friday</p>
+              <div>
+                <img class="weather" src="images/thunder.png" alt="sunny" />
+              </div>
+              <div class="temp">
+                <p>65℉ | 75℉</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p class="days">Saturday</p>
+              <div>
+                <img class="weather" src="images/cloudy.png" alt="sunny" />
+              </div>
+              <div class="temp">
+                <p>65℉ | 75℉</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p class="days">Sunday</p>
+              <div>
+                <img class="weather" src="images/sun.png" alt="sunny" />
+              </div>
+              <div class="temp">
+                <p>65℉ | 75℉</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
