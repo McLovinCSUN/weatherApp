@@ -118,3 +118,9 @@ p {
   width: fit-content;
   height: 40px;
 }
+.links {
+  background-color: thistle;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
